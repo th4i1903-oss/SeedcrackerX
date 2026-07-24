@@ -7,6 +7,7 @@ import kaptainwutax.seedcrackerX.finder.decorator.EndGatewayFinder;
 import kaptainwutax.seedcrackerX.finder.decorator.EndPillarsFinder;
 import kaptainwutax.seedcrackerX.finder.decorator.WarpedFungusFinder;
 import kaptainwutax.seedcrackerX.finder.decorator.ore.EmeraldOreFinder;
+import kaptainwutax.seedcrackerX.finder.decorator.ore.DiamondOreFinder;
 import kaptainwutax.seedcrackerX.finder.structure.*;
 import kaptainwutax.seedcrackerX.render.Cuboid;
 import kaptainwutax.seedcrackerX.util.FeatureToggle;
