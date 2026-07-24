@@ -26,11 +26,11 @@ repositories {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
+	//to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 
-	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 	include implementation(fabricApi.module("fabric-api-base", project.fabric_api_version))
 	include implementation(fabricApi.module("fabric-transitive-access-wideners-v1", project.fabric_api_version))
@@ -45,6 +45,8 @@ dependencies {
 	}
 	include("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}")
 
+	// modImplementation ("com.terraformersmc:modmenu:${project.modmenu_version}") {transitive = false}
+
 	include implementation("com.seedfinding:mc_math:${project.seedfinding_math_version}") { transitive = false }
 	include implementation("com.seedfinding:mc_seed:${project.seedfinding_seed_version}") { transitive = false }
 	include implementation("com.seedfinding:mc_core:${project.seedfinding_core_version}") { transitive = false }
@@ -55,6 +57,13 @@ dependencies {
 	include implementation("com.seedfinding:mc_reversal:${project.seedfinding_reversal_version}") { transitive = false }
 
 	include implementation("com.seedfinding:latticg:${project.latticg_version}")
+
+//	modRuntimeOnly("me.djtheredstoner:DevAuth-fabric:${project.devauth_version}") {
+//		exclude group: 'net.fabricmc', module: 'fabric-loader'
+//	}
+//	productionRuntimeMods("me.djtheredstoner:DevAuth-fabric:${project.devauth_version}") {
+//		exclude group: 'net.fabricmc', module: 'fabric-loader'
+//	}
 }
 
 processResources {
@@ -77,7 +86,7 @@ tasks.register("prodClient", ClientProductionRunTask) {
 	jvmArgs.add("-Ddevauth.enabled=true")
 
 	javaLauncher = javaToolchains.launcherFor {
-		languageVersion = JavaLanguageVersion.of(21)
+		languageVersion = JavaLanguageVersion.of(25)
 	}
 }
 
