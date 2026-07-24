@@ -140,12 +140,13 @@ public abstract class Finder {
 
         END_PILLARS(EndPillarsFinder::create, Category.DECORATORS, Config.get().endPillars, "finder.endPillars"),
         END_GATEWAY(EndGatewayFinder::create, Category.DECORATORS, Config.get().endGateway, "finder.endGateways"),
-        DUNGEON(DungeonFinder::create, Category.DECORATORS, Config.get().dungeon, "finder.dungeons"),
-            EMERALD_ORE(EmeraldOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.emeraldOres"),
-    DIAMOND_ORE(DiamondOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.diamondOres"),
-    GOLD_ORE(GoldOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.goldOres"),
-    REDSTONE_ORE(RedstoneOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.redstoneOres"),
-    LAPIS_ORE(LapisOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.lapisOres"),
+        DUNGEON(DungeonFinder::create, Category.DECORATORS, Config.get().dungeon, "finder.dungeons"),                   
+             EMERALD_ORE(EmeraldOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.emeraldOres"),
+        DIAMOND_ORE(DiamondOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.diamondOres"),
+        GOLD_ORE(GoldOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.goldOres"),
+        REDSTONE_ORE(RedstoneOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.redstoneOres"),
+        LAPIS_ORE(LapisOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.lapisOres"),
+
         DESERT_WELL(DesertWellFinder::create, Category.DECORATORS, Config.get().desertWell, "finder.desertWells"),
         WARPED_FUNGUS(WarpedFungusFinder::create, Category.DECORATORS, Config.get().warpedFungus, "finder.warpedFungus"),
 
